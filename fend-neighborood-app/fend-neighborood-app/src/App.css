@@ -79,13 +79,13 @@ html,
         width: 36px;
         height: 30px;
         left: 36px;
-        top: 36px;
+        top: 17px;
         fill: #eaebee
       }
 
       /* Color/shape of burger icon bars */
       .bm-burger-bars {
-        background: #373a47;
+        background: #fafafc;
       }
 
       /* Position and sizing of clickable cross button */
@@ -101,7 +101,7 @@ html,
 
       /* General sidebar styles */
       .bm-menu {
-        background: #cacdd6;
+        background: #e4e5e9;
         padding: 2.5em 1.5em 0;
         font-size: 1.15em;
         /* -ms-transform: translate(-260px, 0);
@@ -127,46 +127,28 @@ html,
 
       /* Styling of overlay */
       .bm-overlay {
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0);
+        width: 0%;
+        height: 0%;
       }
 
-
-
-
-
-          
-
-      /* .filter-list {
-        background: #fff;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 20px;
-        width: 35px;
-        height: 100%;
-        padding: 20px;
-        position: absolute;
-        -ms-transform: translate(-260px, 0);
-        -webkit-transform: translate(-260px, 0);
-        transform: translate(-300px, 0);
-        transition: transform 0.5s ease;
-        width: 260px;
-        z-index: 5;
-        flex-wrap: nowrap;
-
+/* APPBAR Material UI customisation     */
+      .appbar {
+        display: flex;
+        width: 100%;
+        background-color: red;
       }
 
-      .header-list {
-        background: #fff;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 20px;
-        padding: 20px;
-        position: absolute;
-        width: 35px;
-        height: 100%;
-        background-color: black;
-        margin: 6px 0;
-        flex-wrap: nowrap; */
-      /* } */
+      .toolbar {
+        display: flex;
+        width: 100%;
+        background-color: rgba(27, 66, 12, 0.911);
+      }
 
-      
+      .appbar-title {
+        text-align: right;
+        padding-left: 80px;
+        text-decoration-color:yellow
+      }
 
-      
+     

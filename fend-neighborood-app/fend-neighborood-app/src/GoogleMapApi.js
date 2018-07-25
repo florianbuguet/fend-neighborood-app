@@ -6,43 +6,33 @@ import PropTypes from 'prop-types';
 
 
 export class GoogleMapApi extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showingInfoWindow: false,
-            activeMarker: {},
-            selectedPlace: {},  
-        }
-        this.onMarkerClick = this.onMarkerClick.bind(this);
-        this.onMapClicked = this.onMapClicked.bind(this);
+
+    state = {
+        selectedMarker: undefined
     }
-    
+
     static propTypes = {
-        selectedMarker: PropTypes.array.isRequired
+        markers: PropTypes.array.isRequired,
+        selectedMarker: PropTypes.object.isRequired,
+        activeMarker: PropTypes.object.isRequired,
+        showingInfoWindow: PropTypes.bool.isRequired,
+        onMarkerClick: PropTypes.func.isRequired,
+    }
+
+    markerClicked = (selectedMarker, markers) => {
+        this.props.onMarkerClick(selectedMarker);
+        this.setState({selectedMarker: selectedMarker})
     }
     
-    onMarkerClick = (props, marker, e) =>
-        this.setState({
-            selectedPlace: props,
-            activeMarker: marker,
-            showingInfoWindow: true
-    });
-    
-    onMapClicked = (props) => {
-        if (this.state.showingInfoWindow) {
-            this.setState({
-            selectedPlace: {},
-            showingInfoWindow: false,
-            activeMarker: null
-            })
-        }
-    };
-    
+    mapClicked = () => {
+        this.props.onMapClicked();
+    }
+   
     render() {
         if (!this.props.loaded){
             return <div>The Mac Donald's finder is loading</div>
         }
-            const {selectedMarker} =  this.props
+            const {selectedMarker, markers, showingInfoWindow} =  this.props
             
             const styles = {width: '100%',
             height: '100%'}
@@ -58,28 +48,27 @@ export class GoogleMapApi extends Component {
                         }}
                         className={'map'}
                         zoom={13.2}
-                        onClick={this.onMapClicked}
+                        onClick={this.mapClicked}
                     >
                     
-                    {selectedMarker.map(data =>
+                    {markers.map(data =>
                         <Marker
                         key={data.key}
                         title={data.title}
                         name={data.name}
                         position={data.position}
-                        onClick = { this.onMarkerClick } />
+                        onClick = {(props, marker) => this.markerClicked(data, marker) } />
                     )}
-                        
+                    
                         <InfoWindow
-                            marker={this.state.activeMarker}
+                            position={selectedMarker.position}
                             onOpen={this.windowHasOpened}
                             onClose={this.windowHasClosed}
-                            visible={this.state.showingInfoWindow}>
+                            visible={showingInfoWindow}>
                                 <div>
-                                    <div className="infowindow-name">{this.state.selectedPlace.name}</div>
+                                    <div className="infowindow-name">{selectedMarker.name}</div>
                                 </div>
                         </InfoWindow>
-                    
                 </Map>
             </div>
         );
