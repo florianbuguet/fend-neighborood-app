@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a Paris place finder that was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+It is mainly based on Google Maps and Foursquare API
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
@@ -6,6 +8,8 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
+- [Google Maps API](#google-maps-api)
+- [Foursquare API](#foursquare-API)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
 - [Available Scripts](#available-scripts)
@@ -119,6 +123,16 @@ To update an existing project to a new version of `react-scripts`, [open the cha
 In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
 
 We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
+
+## Google Maps API
+
+This application is based on Google Maps API. The documentation can be found to this link: https://github.com/fullstackreact/google-maps-react
+
+## Foursquare API
+
+This application is based on the foursquare search API: https://developer.foursquare.com/docs/api/venues/search
+
+The search by default is set to Paris.
 
 ## Sending Feedback
 
