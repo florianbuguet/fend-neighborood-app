@@ -1,0 +1,171 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+html,
+      body {
+        font-family: Arial, sans-serif;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100%;
+        position: relative;
+        /* flex-wrap: nowrap; */
+      }
+
+      input {
+        font-size: 12px;
+      }
+
+      h1 {
+        color: #525454;
+        font-size: 22px;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+
+      h2 {
+        color: #525454;
+        font-size: 22px;
+        margin: 0 0 10px 0;
+        text-align: center;
+      }
+
+      #hide-listings,
+      #show-listings {
+        width: 48%;
+      }
+
+      #map {
+        bottom:0px;
+        height: 100%;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        flex-wrap: nowrap;
+      }
+
+      /* Position and sizing of burger button */
+      .bm-burger-button {
+        position: absolute;
+        width: 36px;
+        height: 30px;
+        left: 36px;
+        top: 17px;
+        fill: #eaebee
+      }
+
+      /* Color/shape of burger icon bars */
+      .bm-burger-bars {
+        background: #fafafc;
+      }
+
+      /* Position and sizing of clickable cross button */
+      .bm-cross-button {
+        height: 24px;
+        width: 24px;
+      }
+
+      /* Color/shape of close button cross */
+      .bm-cross {
+        background: #121213;
+      }
+
+      /* General sidebar styles */
+      .bm-menu {
+        background: #e4e5e9;
+        padding: 2.5em 1.5em 0;
+        font-size: 1.15em;
+        /* -ms-transform: translate(-260px, 0);
+        -webkit-transform: translate(-260px, 0); */
+        /* transform: translate(-300px, 0); */
+      }
+
+      /* Morph shape necessary with bubble or elastic */
+      .bm-morph-shape {
+        fill: #373a47;
+      }
+
+      /* Wrapper for item list */
+      .bm-item-list {
+        color: #161613;
+        padding: 0.8em;
+      }
+
+      /* Individual item */
+      .bm-item {
+        display: inline-block;
+        font-size: 10px; 
+      }
+
+      /* Styling of overlay */
+      .bm-overlay {
+        background: rgba(0, 0, 0, 0);
+        width: 0%;
+        height: 0%;
+      }
+
+      .infowindow{
+        text-align: left;
+        width: 85px;
+        background: lightblue;
+      
+      }
+
+      .mc-name{
+        font-size: 10px; 
+      }
+
+      .filter-input{
+        width: 170px;
+        height: 30 px;
+        font-size: 18px; 
+      }
+
+/* APPBAR Material UI customisation     */
+      .appbar {
+        display: flex;
+        width: 100%;
+      }
+
+      .toolbar {
+        display: flex;
+        width: 100%;
+        background-color: rgba(27, 66, 12, 0.911);
+      }
+
+      .appbar-title {
+        text-align: right;
+        padding-left: 80px;
+        text-decoration-color:yellow
+      }
+
+     
