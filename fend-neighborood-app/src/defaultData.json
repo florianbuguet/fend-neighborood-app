@@ -1,0 +1,1003 @@
+[{
+    "id": "4bfd472cee20ef3b1b543c5e",
+    "name": "McDonald's",
+    "location": {
+        "address": "184 Rue de Rivoli",
+        "lat": 48.86335864032518,
+        "lng": 2.333826370447076,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.86335864032518,
+            "lng": 2.333826370447076
+        }],
+        "distance": 971,
+        "postalCode": "75001",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["184 Rue de Rivoli", "75001 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b5056eaf964a520da2027e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "140 avenue des Champs-Élysées",
+        "lat": 48.872929423627255,
+        "lng": 2.2990769147872925,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.872929423627255,
+            "lng": 2.2990769147872925
+        }],
+        "distance": 1801,
+        "postalCode": "75008",
+        "cc": "FR",
+        "neighborhood": "Champs-Élysées, Paris",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["140 avenue des Champs-Élysées", "75008 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4baa7acef964a520b46d3ae3",
+    "name": "McDonald's",
+    "location": {
+        "address": "116 Rue de Rivoli",
+        "lat": 48.85924288051919,
+        "lng": 2.3459909424097134,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.85924288051919,
+            "lng": 2.3459909424097134
+        }],
+        "distance": 1961,
+        "postalCode": "75001",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["116 Rue de Rivoli", "75001 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b54a90bf964a52079c527e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "34 boulevard des Italiens",
+        "lat": 48.87119472482671,
+        "lng": 2.335133854635359,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.87119472482671,
+            "lng": 2.335133854635359
+        }],
+        "distance": 1209,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["34 boulevard des Italiens", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b531400f964a520508e27e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "Carrousel du Louvre",
+        "crossStreet": "99 rue de Rivoli",
+        "lat": 48.862117406003776,
+        "lng": 2.3341012001037598,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.862117406003776,
+            "lng": 2.3341012001037598
+        }],
+        "distance": 1034,
+        "postalCode": "75001",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["Carrousel du Louvre (99 rue de Rivoli)", "75001 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4c45e1a0f97fbe9a292ebd30",
+    "name": "McDonald's",
+    "location": {
+        "address": "84, avenue des Champs Elysées",
+        "crossStreet": "Galerie des Champs",
+        "lat": 48.871258186694156,
+        "lng": 2.3037880653474856,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.871258186694156,
+            "lng": 2.3037880653474856
+        }],
+        "distance": 1409,
+        "postalCode": "75008",
+        "cc": "FR",
+        "neighborhood": "Champs-Élysées, Paris, Région Île-de-France",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["84, avenue des Champs Elysées (Galerie des Champs)", "75008 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4bdac822c79cc92818ac7fe9",
+    "name": "McDonald's",
+    "location": {
+        "address": "20 Boulevard Montmartre",
+        "lat": 48.87206482830003,
+        "lng": 2.340071405275744,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.87206482830003,
+            "lng": 2.340071405275744
+        }],
+        "distance": 1572,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["20 Boulevard Montmartre", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b9e0d9df964a52045c836e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "98 Boulevard Saint Germain",
+        "lat": 48.851412478025566,
+        "lng": 2.343781292438507,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.851412478025566,
+            "lng": 2.343781292438507
+        }],
+        "distance": 2295,
+        "postalCode": "75005",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["98 Boulevard Saint Germain", "75005 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4ac0ca73f964a5208c9420e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "5 rue du Renard",
+        "lat": 48.857928179963686,
+        "lng": 2.351476550102234,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.857928179963686,
+            "lng": 2.351476550102234
+        }],
+        "distance": 2389,
+        "postalCode": "75004",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["5 rue du Renard", "75004 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4bbccfd3f57ba5933846adb9",
+    "name": "McDonald's",
+    "location": {
+        "address": "1 rue du Commerce",
+        "lat": 48.848842672265306,
+        "lng": 2.2978082299232483,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.848842672265306,
+            "lng": 2.2978082299232483
+        }],
+        "distance": 2520,
+        "postalCode": "75015",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["1 rue du Commerce", "75015 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4bbb347498c7ef3bf3d53302",
+    "name": "McDonald's",
+    "location": {
+        "address": "65 Boulevard Saint Michel",
+        "crossStreet": "Rue Soufflot",
+        "lat": 48.84711998137851,
+        "lng": 2.340989112854004,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.84711998137851,
+            "lng": 2.340989112854004
+        }],
+        "distance": 2523,
+        "postalCode": "75005",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["65 Boulevard Saint Michel (Rue Soufflot)", "75005 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b7e3943f964a52081e62fe3",
+    "name": "McDonald's",
+    "location": {
+        "address": "19 Place de la République",
+        "lat": 48.8677813613806,
+        "lng": 2.3627212163624094,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.8677813613806,
+            "lng": 2.3627212163624094
+        }],
+        "distance": 3065,
+        "postalCode": "75003",
+        "cc": "FR",
+        "neighborhood": "ré",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["19 Place de la République", "75003 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4aedd208f964a52039cf21e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "57 avenue de Clichy",
+        "lat": 48.88760303793892,
+        "lng": 2.3254345821375755,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.88760303793892,
+            "lng": 2.3254345821375755
+        }],
+        "distance": 2473,
+        "postalCode": "75017",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["57 avenue de Clichy", "75017 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b83cf23f964a520791131e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "25 rue de Dunkerque 75010 PARIS",
+        "crossStreet": "Rue de Compiègne",
+        "lat": 48.87996797703478,
+        "lng": 2.353799343109131,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.87996797703478,
+            "lng": 2.353799343109131
+        }],
+        "distance": 2887,
+        "postalCode": "75010",
+        "cc": "FR",
+        "neighborhood": "Goutte",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["25 rue de Dunkerque 75010 PARIS (Rue de Compiègne)", "75010 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4bb47ab5f187a593862814f8",
+    "name": "McDonald's",
+    "location": {
+        "address": "119 Rue Saint Lazare",
+        "lat": 48.875293,
+        "lng": 2.32559,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.875293,
+            "lng": 2.32559
+        }],
+        "distance": 1133,
+        "postalCode": "75008",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["119 Rue Saint Lazare", "75008 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4be2b03d660ec928abf0c93b",
+    "name": "McDonald's",
+    "location": {
+        "address": "11 avenue de Wagram",
+        "lat": 48.875541779571066,
+        "lng": 2.2963388702333076,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.875541779571066,
+            "lng": 2.2963388702333076
+        }],
+        "distance": 2118,
+        "postalCode": "75017",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["11 avenue de Wagram", "75017 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b214557f964a5204b3924e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "65 Rue La Fayette",
+        "lat": 48.87606824389838,
+        "lng": 2.3440616066790825,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.87606824389838,
+            "lng": 2.3440616066790825
+        }],
+        "distance": 2053,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["65 Rue La Fayette", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4be1abe8a145c928e5274e80",
+    "name": "McDonald's",
+    "location": {
+        "address": "2 Avenue Secrétan",
+        "crossStreet": "196 boulevard de la Villette",
+        "lat": 48.8822328046464,
+        "lng": 2.3706382513046265,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.8822328046464,
+            "lng": 2.3706382513046265
+        }],
+        "distance": 4080,
+        "postalCode": "75019",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["2 Avenue Secrétan (196 boulevard de la Villette)", "75019 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4bb7463c1344b71319839e04",
+    "name": "McDonald's",
+    "location": {
+        "address": "96 rue de Provence",
+        "lat": 48.87435248300431,
+        "lng": 2.329834308243638,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.87435248300431,
+            "lng": 2.329834308243638
+        }],
+        "distance": 1172,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["96 rue de Provence", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b5e18c8f964a520667d29e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "2 rue d'Orsel",
+        "lat": 48.883867754724605,
+        "lng": 2.3469360536205013,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.883867754724605,
+            "lng": 2.3469360536205013
+        }],
+        "distance": 2784,
+        "postalCode": "75018",
+        "cc": "FR",
+        "neighborhood": "Clignancourt, Paris",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["2 rue d'Orsel", "75018 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b705429f964a52011132de3",
+    "name": "McDonald's",
+    "location": {
+        "address": "131 Avenue Victor Hugo",
+        "lat": 48.86789347995651,
+        "lng": 2.2812884477369506,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.86789347995651,
+            "lng": 2.2812884477369506
+        }],
+        "distance": 2918,
+        "postalCode": "75016",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["131 Avenue Victor Hugo", "75016 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b4a36f3f964a520117f26e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "116 Boulevard Diderot",
+        "lat": 48.847139,
+        "lng": 2.386646,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.847139,
+            "lng": 2.386646
+        }],
+        "distance": 5228,
+        "postalCode": "75012",
+        "cc": "FR",
+        "neighborhood": "Reuilly, Paris",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["116 Boulevard Diderot", "75012 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d1c7941735",
+        "name": "Snack Place",
+        "pluralName": "Snack Places",
+        "shortName": "Snacks",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/snacks_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4c28dd493492a593d206b828",
+    "name": "McDonald's",
+    "location": {
+        "address": "12 rue Berger",
+        "lat": 48.86087580698255,
+        "lng": 2.3481683899417445,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.86087580698255,
+            "lng": 2.3481683899417445
+        }],
+        "distance": 2057,
+        "postalCode": "75001",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["12 rue Berger", "75001 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4ba9f015f964a520b13e3ae3",
+    "name": "McDonald's",
+    "location": {
+        "address": "145 avenue de Villiers",
+        "lat": 48.88561140864305,
+        "lng": 2.2920433725012637,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.88561140864305,
+            "lng": 2.2920433725012637
+        }],
+        "distance": 3076,
+        "postalCode": "75017",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["145 avenue de Villiers", "75017 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b26bf08f964a520578024e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "167 Rue de Rennes",
+        "lat": 48.84455176159719,
+        "lng": 2.324712492585791,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.84455176159719,
+            "lng": 2.324712492585791
+        }],
+        "distance": 2356,
+        "postalCode": "75006",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["167 Rue de Rennes", "75006 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b7520b8f964a520b8fe2de3",
+    "name": "McDonald's",
+    "location": {
+        "address": "2 Boulevard Poissonnière",
+        "lat": 48.870826683939036,
+        "lng": 2.3478007407269947,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.870826683939036,
+            "lng": 2.3478007407269947
+        }],
+        "distance": 2048,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["2 Boulevard Poissonnière", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b7f9669f964a5209e3530e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "Place de Passy",
+        "crossStreet": "Place de Passy",
+        "lat": 48.857617040064156,
+        "lng": 2.2776849567890167,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.857617040064156,
+            "lng": 2.2776849567890167
+        }],
+        "distance": 3292,
+        "postalCode": "75016",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["Place de Passy (Place de Passy)", "75016 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b4a236df964a520fa7b26e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "10 Place de Clichy",
+        "lat": 48.88376481734647,
+        "lng": 2.3280237463921747,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.88376481734647,
+            "lng": 2.3280237463921747
+        }],
+        "distance": 2089,
+        "postalCode": "75009",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["10 Place de Clichy", "75009 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b793e36f964a5207ef02ee3",
+    "name": "McDonald's",
+    "location": {
+        "address": "Place Léon Blum",
+        "lat": 48.85768362722465,
+        "lng": 2.3802932418213,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.85768362722465,
+            "lng": 2.3802932418213
+        }],
+        "distance": 4430,
+        "postalCode": "75011",
+        "cc": "FR",
+        "city": "Paris",
+        "state": "Ile de France (Paris)",
+        "country": "France",
+        "formattedAddress": ["Place Léon Blum", "75011 Paris", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}, {
+    "id": "4b4e288af964a5206ee326e3",
+    "name": "McDonald's",
+    "location": {
+        "address": "40 Rue du Président Wilson",
+        "lat": 48.89142302680246,
+        "lng": 2.290932457337131,
+        "labeledLatLngs": [{
+            "label": "display",
+            "lat": 48.89142302680246,
+            "lng": 2.290932457337131
+        }],
+        "distance": 3622,
+        "postalCode": "92300",
+        "cc": "FR",
+        "city": "Levallois-Perret",
+        "state": "Île-de-France",
+        "country": "France",
+        "formattedAddress": ["40 Rue du Président Wilson", "92300 Levallois-Perret", "France"]
+    },
+    "categories": [{
+        "id": "4bf58dd8d48988d16e941735",
+        "name": "Fast Food Restaurant",
+        "pluralName": "Fast Food Restaurants",
+        "shortName": "Fast Food",
+        "icon": {
+            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/food\/fastfood_",
+            "suffix": ".png"
+        },
+        "primary": true
+    }],
+    "referralId": "v-1532863110",
+    "hasPerk": false
+}]

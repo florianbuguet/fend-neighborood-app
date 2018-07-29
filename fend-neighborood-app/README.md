@@ -1,9 +1,17 @@
-This is a Paris place finder that was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This is a Paris Mc Donald's finder that was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 It is mainly based on Google Maps and Foursquare API
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+## Setup
+Clone the repository or download it and then run `npm install` to install the McDonald's finder.
+Once installed run `npm start` to start the App.
+
+The Application loads 30 Mc Donald's places in the Paris downtown area. These 30 locations have been loaded through the foursquare API.
+
+The Map is loaded and rendered thanks to the Google Maps API. Markers
 
 ## Table of Contents
 

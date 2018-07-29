@@ -104,9 +104,7 @@ html,
         background: #e4e5e9;
         padding: 2.5em 1.5em 0;
         font-size: 1.15em;
-        /* -ms-transform: translate(-260px, 0);
-        -webkit-transform: translate(-260px, 0); */
-        /* transform: translate(-300px, 0); */
+
       }
 
       /* Morph shape necessary with bubble or elastic */
@@ -117,13 +115,14 @@ html,
       /* Wrapper for item list */
       .bm-item-list {
         color: #161613;
-        padding: 0.8em;
+        /* padding: 0.8em; */
+        font-size: 40px;
       }
 
       /* Individual item */
       .bm-item {
         display: inline-block;
-        font-size: 10px; 
+         
       }
 
       /* Styling of overlay */

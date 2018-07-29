@@ -5,8 +5,8 @@ import './App.css';
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-// Json data passed to Google Map API for location data 
-import * as markerData from './markerData.json';
+// Json data loaded from Foursquare passed to Google Map API for location data 
+import * as defaultData from './defaultData.json';
 import HambMenu from './HambMenu';
 
 
@@ -14,85 +14,107 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markers: [],
+      markers: defaultData,
+      displayedMarkers:[],
       showingInfoWindow: false,
       activeMarker: {},
       selectedMarker: {},
-      query:'Paris'
+      query:''
     }
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this); 
   }
 
-  //INIT Foursquare date param and fetch data
-
-  initFourSquare (query) {
-    const lat = 48.8655747;
-    const lng = 2.3209916;
-    const CLIENT_ID = 'VEIX15AQ0VBBHLMJFG2JIF34OMRTXQF2PYWKFMXJ2ZY2TZSV';
-    const CLIENT_SECRET = 'F4Q15NFEVSNTCVRO2LU12NGM2SQMQANMCJEZYW2NWUPSR20N';
-    const DATE = Date.now();
-    return fetch(`https://api.foursquare.com/v2/venues/search?ll=${lat},${lng}&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=${DATE}&query=${query}`).then((res) => {
-      return res.json();
-    })
-    .then((res) => {
-      if (res.code === 429){
-       this.setState({markers: []});
-      }
-      else {const venuesData = res.response["venues"];
-      this.setState({markers: venuesData});
-      }
-    })
-  }
-
   componentDidMount() {
     // API call
-    this.initFourSquare();
+    window.gm_authFailure = this.gm_authFailure;
+    this.initiDisplayedMarkers();
   }
   
   onMarkerClick = (props) =>
       this.setState({
           selectedMarker: props,
-          showingInfoWindow: true,  
-  });
+          activeMarker: props,
+          showingInfoWindow: true, 
+           
+  })
   
   onMapClicked = () => {
       if (this.state.showingInfoWindow) {
           this.setState({
           selectedMarker: {},
           showingInfoWindow: false,
-          activeMarker: null
+          activeMarker: null,
+          
           })
       }
-  };
-
-  // Pass query from Hambmenu and filter locations in the menu
-  filterSearchedLocations = (query) => {
-    this.setState({query:query});
-    this.initFourSquare(query);
   }
-  
+
+  initiDisplayedMarkers = () =>{
+    // Load objects and data only if markers is filled
+    const markers = this.state.markers
+    const markersData = []
+    if (markers !== undefined) {
+      for (let i=0; i<markers.length; i++){
+        // Make data from JSON to table to be accessible
+       markersData.push({
+          "name":markers[i].name,
+          "location":markers[i].location,
+          "address":markers[i].location.address,
+          "distance":markers[i].location.distance,
+          "lat":markers[i].location.lat,
+          "lng":markers[i].location.lng,
+          "id":markers[i].id,
+          "position":{"lat":markers[i].location.lat,"lng":markers[i].location.lng},
+          "distance":markers[i].location.distance,
+        })
+      }
+    } 
+    this.setState({displayedMarkers: markersData})
+  }
+
+  filterSearch = (query) =>{
+    if(query.length>0){
+      this.setState({query:query})
+      const searchedMarkers =  this.state.displayedMarkers.filter((marker) => {
+        return marker.address.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+      })
+      this.setState({displayedMarkers:searchedMarkers})
+    }
+    else {
+      this.initiDisplayedMarkers()
+      this.setState({query:''})}
+  }
+
+  // Check for Google Maps Authentification first
+  gm_authFailure(){
+    window.alert("Google Map cannot load please retry later or update your Google API Key")
+  }
+    
   render() {    
     return (    
         <div className="App">
           <AppBar className="appbar">
             <Toolbar className="toolbar">
               <Typography className="appbar-title" variant="title" color="inherit" position="absolute">
-                    Paris Places Finder
+                    Paris McDonald's Finder
               </Typography>
             </Toolbar>
             <HambMenu
-            className="hambmenu"
-            aria-label="Hamburger Menu to search places"
-            selectedMarker={this.state.selectedMarker}
-            markers={this.state.markers}
-            activeMarker={this.state.activeMarker}
-            onMarkerClick ={this.onMarkerClick}
-            ListMarkerClick ={this.ListMarkerClick}
-            filterSearchedLocations ={this.filterSearchedLocations}
-            query={this.state.query}
-            onMapClicked ={this.onMapClicked}
-            onMenuClicked ={this.onMenuClicked}
+              className="hambmenu"
+              aria-label="Hamburger Menu to search places"
+              tabIndex={this.props.tabIndex}
+              selectedMarker={this.state.selectedMarker}
+              markers={this.state.markers}
+              displayedMarkers={this.state.displayedMarkers}
+              activeMarker={this.state.activeMarker}
+              onMarkerClick ={this.onMarkerClick}
+              ListMarkerClick ={this.ListMarkerClick}
+              initiDisplayedMarkers ={this.initiDisplayedMarkers}
+              filterSearch ={this.filterSearch}
+              query={this.state.query}
+              onMapClicked ={this.onMapClicked}
+              onMenuClicked ={this.onMenuClicked}
             />            
             
           </AppBar>  
@@ -101,6 +123,7 @@ class App extends Component {
           <GoogleMapApi
             selectedMarker={this.state.selectedMarker}
             markers={this.state.markers}
+            displayedMarkers={this.state.displayedMarkers}
             activeMarker={this.state.activeMarker}
             showingInfoWindow={this.state.showingInfoWindow}
             onMarkerClick ={this.onMarkerClick}

@@ -8,14 +8,14 @@ class HambMenu extends Component {
     super(props);
     this.state = { 
       open: false,
-      filterKey:[],
-      
+      filterSearchedLocations:[]
     };
   }
 
   static propTypes = {
-    // markers: PropTypes.array.isRequired,
-    query: PropTypes.string.isRequired,
+    markers: PropTypes.array.isRequired,
+    displayedMarkers: PropTypes.array.isRequired,
+
   }
   
   // Update selected marker when clicked
@@ -24,44 +24,26 @@ class HambMenu extends Component {
   }
 
   handleQuery = (query) => {
-    this.props.filterSearchedLocations(query);
-	}
-  
-  render () {
-    const {markers, query} = this.props;
-
-    const displayedMarkers = []
-    
-    // Load objects and data only if markers is filled
-    if (markers !== undefined) {
-      for (let i=0; i<markers.length; i++){
-      // Make data from JSON to table to be accessible
-      displayedMarkers.push({
-        "name":markers[i].name,
-        "location":markers[i].location,
-        "address":markers[i].location.address,
-        "distance":markers[i].location.distance,
-        "lat":markers[i].location.lat,
-        "lng":markers[i].location.lng,
-        "id":markers[i].id,
-        "position":{"lat":markers[i].location.lat,"lng":markers[i].location.lng}
-      })
-    } 
-   
+    this.props.filterSearch(query);
   }
-    
+
+  render () {
+    const {displayedMarkers} = this.props;
+  
     return (
       <div>
         <Menu
         position="absolute"
+        
         >
-          <MenuList>
+          <MenuList
+          tabIndex={this.state.currentTabIndex}>
             <div>
               <input 
               className="filter-input"
               type="text"
               placeholder="Search for a place in Paris..."
-              value={query}
+              value={this.state.query}
               onChange={(event)=>this.handleQuery(event.target.value)}
               aria-label="text filter"
               />
@@ -74,6 +56,7 @@ class HambMenu extends Component {
                     distance={data.disance}
                     onClick ={() => this.ListMarkerClick(data)}
                     key={data.id} 
+                    tabIndex={this.props.tabIndex}
                     className="bm-item mc-name"> 
                       
                         {data.name} {data.location.address}
