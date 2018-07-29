@@ -17,6 +17,7 @@ class App extends Component {
       markers: defaultData,
       displayedMarkers:[],
       showingInfoWindow: false,
+      animation: null,
       activeMarker: {},
       selectedMarker: {},
       query:''
@@ -31,21 +32,21 @@ class App extends Component {
     this.initiDisplayedMarkers();
   }
   
-  onMarkerClick = (props) =>
+  onMarkerClick = (props) => {
       this.setState({
           selectedMarker: props,
           activeMarker: props,
-          showingInfoWindow: true, 
-           
-  })
-  
+          showingInfoWindow: true,
+          animation: 'DROP'
+        })
+}
   onMapClicked = () => {
       if (this.state.showingInfoWindow) {
           this.setState({
           selectedMarker: {},
           showingInfoWindow: false,
           activeMarker: null,
-          
+          animation:null
           })
       }
   }

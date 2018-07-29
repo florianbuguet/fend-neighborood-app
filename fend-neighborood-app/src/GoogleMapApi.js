@@ -16,6 +16,7 @@ export class GoogleMapApi extends Component {
         displayedMarkers: PropTypes.array.isRequired,
         selectedMarker: PropTypes.object.isRequired,
         showingInfoWindow: PropTypes.bool.isRequired,
+        animation: PropTypes.string.isRequired,
         onMarkerClick: PropTypes.func.isRequired,
     }
 
@@ -23,17 +24,13 @@ export class GoogleMapApi extends Component {
         this.props.onMarkerClick(selectedMarker);
         this.setState({selectedMarker: selectedMarker})
     }
-
-    // toggleAnimation = (selectedMarker)=>{
-    //    selectedMarker.Animation.BOUNCE
-    // }
     
     mapClicked = () => {
         this.props.onMapClicked();
     }
    
     render() {
-        const {selectedMarker, displayedMarkers, showingInfoWindow} =  this.props
+        const {selectedMarker, displayedMarkers, showingInfoWindow, animation} =  this.props
         
         const style = {width: '100%', height: '100%'}
         
@@ -62,7 +59,7 @@ export class GoogleMapApi extends Component {
                         onClick = {(data) => {
                             this.markerClicked(data)
                             }}
-                        animation={ this.props.google.maps.Animation.DROP}
+                        animation={this.state.animation}
                     />
                 )}
                 
