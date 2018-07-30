@@ -16,7 +16,6 @@ class HambMenu extends Component {
     markers: PropTypes.array.isRequired,
     displayedMarkers: PropTypes.array.isRequired,
     selectedMarker: PropTypes.object.isRequired,
-
   }
   
   // Update selected marker when clicked
@@ -33,8 +32,6 @@ class HambMenu extends Component {
 
   render () {
     const {displayedMarkers} = this.props;
-    const {selectedMarker} = this.state;
-
   
     return (
       <div>

@@ -31,7 +31,7 @@ export class GoogleMapApi extends Component {
     }
    
     render() {
-        const {selectedMarker, displayedMarkers, showingInfoWindow,className} =  this.props
+        const {selectedMarker, displayedMarkers, showingInfoWindow, position} =  this.props
         
         const style = {width: '100%', height: '100%'}
         
@@ -58,17 +58,16 @@ export class GoogleMapApi extends Component {
                             distance={data.distance}
                             address={data.address}
                             onClick = {(data) => {this.markerClicked(data)}}
-                            className={className}
                             animation={this.props.google.maps.Animation.DROP}
                         />
                     )}
                         <Marker
-                            position={this.props.selectedMarker.position}
+                            position={selectedMarker.position}
                             address={selectedMarker.name}
                             animation={this.props.google.maps.Animation.DROP}
+                            visible={showingInfoWindow}
                         />                
                         <InfoWindow
-                            // marker={this.state.activeMarker}
                             position={selectedMarker.position}
                             onOpen={this.windowHasOpened}
                             onClose={this.mapClicked}

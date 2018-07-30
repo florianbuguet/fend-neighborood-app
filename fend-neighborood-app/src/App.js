@@ -22,6 +22,7 @@ class App extends Component {
       selectedMarker: {},
       animateMarker: {},
       query:'',
+      position:{}
     }
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this); 
@@ -59,19 +60,20 @@ class App extends Component {
         activeMarker: props,
         showingInfoWindow: true,
     })
-    this.animateMarker(props);
+    this.animateMarker();
   }
 
-  animateMarker = (props) => {
+  animateMarker = () => {
     this.setState({
-      selectedMarker:props,
+      position: this.state.selectedMarker.position,
     })
   }
   
   onMapClicked = () => {
       if (this.state.showingInfoWindow) {
           this.setState({
-          selectedMarker: {},
+          selectedMarker:{},
+          position: {},
           showingInfoWindow: false,
           activeMarker: null,
           })
@@ -143,6 +145,7 @@ class App extends Component {
               query={this.state.query}
               onMapClicked ={this.onMapClicked}
               onMenuClicked ={this.onMenuClicked}
+              position={this.state.position}
             />            
           </AppBar>  
 
@@ -157,6 +160,8 @@ class App extends Component {
             onMapClicked ={this.onMapClicked}
             onMenuClicked ={this.onMenuClicked}
             animateMarker={this.state.animateMarker}
+            position={this.state.position}
+
           />
           
       </div>
