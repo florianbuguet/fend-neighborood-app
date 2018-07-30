@@ -15,12 +15,16 @@ class HambMenu extends Component {
   static propTypes = {
     markers: PropTypes.array.isRequired,
     displayedMarkers: PropTypes.array.isRequired,
+    selectedMarker: PropTypes.object.isRequired,
 
   }
   
   // Update selected marker when clicked
   ListMarkerClick = (selectedMarker) => {
     this.props.onMarkerClick(selectedMarker);
+    this.setState({
+      selectedMarker: selectedMarker,
+     })
   }
 
   handleQuery = (query) => {
@@ -29,6 +33,8 @@ class HambMenu extends Component {
 
   render () {
     const {displayedMarkers} = this.props;
+    const {selectedMarker} = this.state;
+
   
     return (
       <div>

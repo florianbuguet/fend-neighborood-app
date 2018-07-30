@@ -149,6 +149,13 @@ html,
         font-size: 18px; 
       }
 
+      .clicked-marker {
+        animation: pulse .5s infinite alternate;
+        -webkit-animation: pulse .5s infinite alternate;
+        transform-origin: center;
+        -webkit-transform-origin: center;
+      }
+
 /* APPBAR Material UI customisation     */
       .appbar {
         display: flex;

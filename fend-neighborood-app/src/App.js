@@ -14,47 +14,74 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markers: defaultData,
+      markers: [],
+      venues: [],
       displayedMarkers:[],
       showingInfoWindow: false,
-      animation: null,
       activeMarker: {},
       selectedMarker: {},
-      query:''
+      animateMarker: {},
+      query:'',
     }
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this); 
   }
 
+  initFourSquare() {
+    const lat= 48.86;
+    const lng= 2.33;
+    const CLIENT_ID = 'VEIX15AQ0VBBHLMJFG2JIF34OMRTXQF2PYWKFMXJ2ZY2TZSV';
+    const CLIENT_SECRET = 'F4Q15NFEVSNTCVRO2LU12NGM2SQMQANMCJEZYW2NWUPSR20N';
+    const DATE = Date.now();
+    return fetch(`https://api.foursquare.com/v2/venues/search?ll=${lat},${lng}&client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=${DATE}&query=Mc Donald's`)
+    .then((res) => {
+      if(!res.ok){
+        throw res && window.alert("Foursquare API could not load please try again later")
+      }
+      else return res.json();
+    })
+    .then((res) => {
+      const venues = res.response["venues"];
+      this.setState({venues: venues});
+      this.initiDisplayedMarkers(venues);
+    })
+  }
+
   componentDidMount() {
     // API call
     window.gm_authFailure = this.gm_authFailure;
-    this.initiDisplayedMarkers();
+    this.initFourSquare();
   }
   
   onMarkerClick = (props) => {
-      this.setState({
-          selectedMarker: props,
-          activeMarker: props,
-          showingInfoWindow: true,
-          animation: 'DROP'
-        })
-}
+    this.setState({
+        selectedMarker: props,
+        activeMarker: props,
+        showingInfoWindow: true,
+    })
+    this.animateMarker(props);
+  }
+
+  animateMarker = (props) => {
+    this.setState({
+      selectedMarker:props,
+    })
+  }
+  
   onMapClicked = () => {
       if (this.state.showingInfoWindow) {
           this.setState({
           selectedMarker: {},
           showingInfoWindow: false,
           activeMarker: null,
-          animation:null
           })
       }
   }
 
-  initiDisplayedMarkers = () =>{
+  initiDisplayedMarkers = (venues) =>{
     // Load objects and data only if markers is filled
-    const markers = this.state.markers
     const markersData = []
+    const markers = venues
     if (markers !== undefined) {
       for (let i=0; i<markers.length; i++){
         // Make data from JSON to table to be accessible
@@ -83,7 +110,7 @@ class App extends Component {
       this.setState({displayedMarkers:searchedMarkers})
     }
     else {
-      this.initiDisplayedMarkers()
+      this.initiDisplayedMarkers(this.state.venues)
       this.setState({query:''})}
   }
 
@@ -117,9 +144,7 @@ class App extends Component {
               onMapClicked ={this.onMapClicked}
               onMenuClicked ={this.onMenuClicked}
             />            
-            
           </AppBar>  
-
 
           <GoogleMapApi
             selectedMarker={this.state.selectedMarker}
@@ -131,6 +156,7 @@ class App extends Component {
             ListMarkerClick ={this.ListMarkerClick}
             onMapClicked ={this.onMapClicked}
             onMenuClicked ={this.onMenuClicked}
+            animateMarker={this.state.animateMarker}
           />
           
       </div>
